@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  isComponents: boolean = true;
   title = 'lifecycle';
+
+  changeComponent(){
+    this.isComponents=!this.isComponents;
+  }
 }
